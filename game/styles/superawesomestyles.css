@@ -1,0 +1,45 @@
+body{
+background-color: #67597A;
+font-family: Arial, sans-serif; 
+}
+main, header, footer{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+}
+footer{
+    background-color:#b8acca;
+}
+h1 { 
+color:#67597A;
+font-family: 'Poppins', sans-serif;
+border-bottom: 1px solid #453b52
+}
+h2{
+color: #544E61;
+font-family: 'Poppins', sans-serif;
+margin-left: 50px;
+}
+blockquote { 
+background-color: #d5bafb;
+padding: 1rem;
+}
+p{
+margin-left: 100px;
+}
+ul{
+margin-left: 100px;
+}
+img{
+    padding: 2rem; 
+}
+img.side 
+{float:right; margin: 0 12px;}
+
+a { text-decoration: none;}
+a :link {color:#67597A}
+a :visited {color:#42384f}
+a :focus {color:#857896}
+a :hover {color:#857896}
+a :active {color:#b083ef}

@@ -1,0 +1,18 @@
+h1, h2, h3{
+    border-bottom: solid red;
+}
+
+span.name{
+    float: right;
+    width: 40%;
+    margin: .1em;
+}
+h2{
+    clear: right;
+}
+
+div.aliases{
+    float: left;
+    width: 400px;
+    border: 1px solid black;
+}

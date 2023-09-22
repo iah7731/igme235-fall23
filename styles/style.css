@@ -1,0 +1,54 @@
+*{
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-color: #946267;
+  }
+  main, header, footer{
+      background-color: #e4dbbd;
+      margin: 0 auto;
+      width: 80%;
+      padding: 1rem;
+  }
+  h1 { 
+  color:#360704;
+  border-bottom: 1px solid #720E07
+  }
+  h2{
+  color: #b6a7a6;
+  margin-left: 50px;
+  }
+  blockquote { 
+  background-color: #e7c678;
+  padding: 1rem;
+  }
+  hr{
+    border: 1px solid #360704;
+    border-radius: 1px;
+  }
+  p{
+  margin-left: 100px;
+  }
+  .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; 
+  }
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: indianred;
+}
+a:focus{
+  color: purple;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+  color: blue;
+}
