@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.U.M.S.A</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>G.U.M.S.A - General Ubiquitous Manager of Searching Anime</h1>
+        <h2>All search parameters are optional.</h2>
+        <hr>
+    </header>
+    <section>
+        <div id="parameters">
+            <div id="search_term">
+                <h3>Search Term</h3>
+                <p><input id="searchterm" type="text" size="20" maxlength="20"/></p>
+            </div>
+    
+            <div id="sort_order">
+                <h3>How do you want to order your search?</h3>
+                <input type="radio" id="start_date" name="order" value="start_date">
+                <label for="start_date">Start Date</label>
+                <br>
+                <input type="radio" id="end_date" name="order" value="end_date">
+                <label for="end_date">End Date</label>
+                <br>
+                <input type="radio" id="title" name="order" value="title">
+                <label for="title">Title</label>
+                <br>
+                <input type="radio" id="episodes" name="order" value="episodes">
+                <label for="episodes">Lowest to Highest Episode Count</label>
+                <br>
+                <br>
+            </div>
+    
+            <div id="air_status">
+                <h3>Air Status?</h3>
+                <input type="radio" id="airing" name="air" value="airing">
+                <label for="airing">Currently Airing</label>
+                <br>
+                <input type="radio" id="complete" name="air" value="complete">
+                <label for="complete">Completed</label>
+                <br>
+                <input type="radio" id="upcoming" name="air" value="upcoming">
+                <label for="upcoming">Upcoming</label>
+                <br>
+                <br>
+            </div>
+    
+            <div id="rating_select">
+                <h3>Select a rating to filter by.</h3>
+                <input type="radio" id="G" name="rating" value="g">
+                <label for="G">G - All Ages</label>
+                <br>
+                <input type="radio" id="PG" name="rating" value="pg">
+                <label for="PG">PG - Children</label>
+                <br>
+                <input type="radio" id="PG-13" name="rating" value="pg13">
+                <label for="PG-13">PG-13 - Teens 13 or older</label>
+                <br>
+                <input type="radio" id="R" name="rating" value="r17">
+                <label for="R">R - 17+ (violence & profanity)</label>
+                <br>
+                <br>
+            </div>
+    
+            <div id="genre_select">
+                <h3>What genre of anime would you like?</h3>
+                <input type="checkbox" name="genre" value="1">Action<br>
+                <input type="checkbox" name="genre" value="2">Adventure<br>
+                <input type="checkbox" name="genre" value="4">Comedy<br>
+                <input type="checkbox" name="genre" value="7">Mystery<br>
+                <input type="checkbox" name="genre" value="10">Fantasy<br>
+                <input type="checkbox" name="genre" value="18">Mecha<br>
+                <input type="checkbox" name="genre" value="22">Romance<br>
+                <input type="checkbox" name="genre" value="36">Slice of Life<br>
+                <input type="checkbox" name="genre" value="40">Pyschological<br>
+                <input type="checkbox" name="genre" value="46">Award Winning<br>
+            </div>
+    
+            <div id="button">
+                <br><br>
+                <p><button type="button" id="search">Search!</button></p>
+                <p id="debug"></p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <div id="results">
+        <h2>Results</h2>
+
+        <p id="resultnumber"></p>
+
+        <div id="content">
+            <p>No data yet!</p>
+        </div>
+    </div>
+</body>
+
+</html>

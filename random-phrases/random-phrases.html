@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Would Goku Say?</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,800;1,9..40,400;1,9..40,800&family=Playpen+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>What Would Goku Say?</h1>
+
+        <summary>Have you wondered what Goku would say? No? Well, too bad. You're finding out.</summary>
+
+        <br>
+
+    </header>
+    <main>
+        <div id="quotegen">
+            <div class="button">
+                <a href="">What would Goku say again?</a>
+            </div>
+            <p></p>
+            <img src="goku.png" alt="Goku says...">
+        </div>
+    </main>
+    <footer>
+        <h2>By Ivan Hernandez</h2>
+    </footer>
+</body>
+
+<script>
+    "use strict";
+        let quotes = [
+        "And this...Is to go even further beyond!",
+        "Power comes in response to a need, not a desire.",
+        "Even a low-class warrior can surpass an elite.",
+        "Sometimes life is too uncertain to have regrets.",
+        "The ocean is so salty because everyone pees in it."];
+        let linkarea = document.querySelector("a");
+        linkarea.onclick = displayQuote();
+
+        function displayQuote()
+        {
+            let rand = Math.floor(Math.random() * 5);
+            let displayquote = quotes[rand];
+            let quotearea = document.querySelector("p");
+            quotearea.innerHTML = displayquote;
+        }
+        window.onload = displayQuote();
+</script>
+
+</html>

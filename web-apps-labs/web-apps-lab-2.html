@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM-3</title>
+	<style>
+		body{border:1px solid gray;}
+		p b{transform: rotate(20deg)}
+	</style>
+</head>
+<body>
+<h1>My Page</h1>
+<h2>Info</h2>
+<h2>Pictures</h2>
+<h2>More Info</h2>
+<p>Blah <b>Blah</b> Blah</p>
+<p>Blah <b>Blah</b> Blah</p>
+
+<p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+<footer>Copyright &copy; <b>20XX</b></footer>
+<script>
+	"use strict"; 
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "My UFO Page";
+    let h2_1 = document.querySelector("h2");
+    h2_1.innerHTML = "My UFO Info";
+    let h2_2 = document.querySelector("h2");
+    h2_2.innerHTML = "My UFO Pictures";
+    let h2_3 = document.querySelector("h2");
+    h2_3.innerHTML = "";
+    let body = document.querySelector("body");
+    body.style.fontFamily = "sans-serif";
+    body.style.color = "#880808";
+    let p = document.querySelectorAll("p");
+    p[0].style.fontWeight = "bold";
+    p[0].innerHTML = "Report your UFO sightings here: <a href='http://www.nuforc.org'>http://www.nuforc.org</a>";
+    p[0].style.color = "green";
+    p[0].style.fontSize = "2em";
+    p[0].style.textTransform = "uppercase";
+    p[0].style.textShadow = "3px 2px #A44";
+    p[1].innerHTML = "<img src='media/ufo.jpg' alt='ufo'>";
+    let footer = document.querySelector("footer");
+    footer.innerHTML = "Copyright <b>2023</b> Ivan Hernandez";
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+html
+{
+    background-color: #f8eaf9;
+    scroll-behavior: smooth;
+}
+
+h1{
+    color: red;
+    font-size: 200%;
+}
+
+h2{
+    color:rgb(167, 0, 0);
+}
+

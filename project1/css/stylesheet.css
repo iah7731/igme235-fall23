@@ -1,0 +1,216 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+html
+{
+    background-color: #f8eaf9;
+    scroll-behavior: smooth;
+}
+
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-areas: 
+    "header topcenter topcenter"
+    "devhistory getgood secret"
+    "footer nav theroster";
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 20% 40% 30%;
+    column-gap: 75px;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+	#wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-areas: 
+        "topcenter"
+        "devhistory"
+        "getgood"
+        "secret"
+        "theroster"
+        "footer";
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 40% 40% 30% 25%;
+        column-gap: 25px;
+        row-gap: 25px;
+        margin: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #devhistory img{
+        margin: 30px;
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    #getgood img{
+        margin: 10px;
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    #theroster img{
+        float: right;
+        margin: 30px;
+        shape-outside: circle();
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    #secret img{
+        float: left;
+        margin: 30px;
+        shape-outside:circle();
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    #topcenter img{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    position: relative; right: 0px; top: 0px;
+}
+}
+
+@media screen and (min-width: 751px) {#topcenter img{position: relative; right: 250px; top: -150px;}}
+
+h1{
+    color: red;
+    font-size: 200%;
+}
+
+h2{
+    font-family:'Oswald', sans-serif;
+    color:rgb(167, 0, 0);
+}
+
+header{ grid-area: header;}
+
+#header ul {
+    z-index: 100;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fde5ff;
+    position: fixed;
+    top: 0;
+    left:-1px;
+    width: 100%;
+}
+  
+#header li {
+    float: left;
+}
+  
+#header li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#topcenter {grid-area: topcenter;}
+
+#topcenter img{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.paragraphstart{
+    font-size: 400%;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+#devhistory{
+    grid-area: devhistory;
+    position: relative; top: 150px;
+}
+
+#devhistory img{
+    margin: 30px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+#getgood{
+    grid-area: getgood;
+
+}
+
+#getgood img{
+    margin: 10px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#secret{
+    grid-area: secret;
+    position: relative; top: -100px;
+}
+
+#secret img{
+    float: right;
+    margin: 30px;
+    shape-outside: circle();
+    max-width: 60%;
+    max-height: 60%;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#theroster{
+    grid-area: theroster;
+    position: relative; top: -400px;
+}
+
+#theroster img{
+    float: left;
+    margin: 30px;
+    shape-outside:circle();
+    max-width: 70%;
+    max-height: 70%;
+}
+
+#nav{
+    grid-area: nav;
+}
+
+a:link {
+    color: brown;
+}
+  
+a:visited {
+    color: rgb(57, 4, 65);
+}
+  
+a:hover {
+    color: red;
+}
+
+a:focus {
+    color: red;
+}
+a:active {
+    color: rgb(0, 26, 255);
+}
+
+#header a:hover {
+    color: red;
+}
+
